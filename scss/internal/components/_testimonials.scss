@@ -1,0 +1,76 @@
+.testimonials {
+  margin-bottom: 150px;
+
+  @media (max-width: 991px) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 75px;
+  }
+}
+
+.testimonial-tile {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    display: block;
+    margin-right: 20px;
+  }
+
+  &__img {
+    border-radius: 20px;
+    max-width: 300px;
+    height: auto;
+
+    @media (max-width: 767px) {
+      max-width: 240px;
+    }
+  }
+
+  &__content {
+    padding: 25px;
+    max-width: 340px;
+
+    @media (max-width: 767px) {
+      max-width: 240px;
+    }
+
+    &-inner {
+      span {
+        margin-bottom: 8px;
+        @include cerapro-bold();
+        font-size: 2.25rem;
+        color: #dcdcdc;
+      }
+
+      h4 {
+        @include cerapro-bold();
+        font-size: 1.625rem;
+        margin-bottom: 15px;
+        line-height: 1;
+      }
+
+      h5 {
+        @include cerapro-regular();
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+
+      p {
+        position: relative;
+        @include proxima-regular();
+        font-size: 1rem;
+        margin-top: 90px;
+
+        &::before {
+          content: url(./../img/collab/quote.svg);
+          position: absolute;
+          bottom: calc(100% + 20px);
+          left: 0;
+        }
+      }
+    }
+  }
+}

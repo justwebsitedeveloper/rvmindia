@@ -1,0 +1,14 @@
+.arrow-inner {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+
+  &--blue {
+    stroke: #2649db;
+  }
+
+  &--white {
+    stroke: #fff;
+  }
+}

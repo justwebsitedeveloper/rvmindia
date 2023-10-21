@@ -1,0 +1,73 @@
+
+// Logo Reveal section
+
+.home-logo {
+    min-height: 100vh;
+    padding: 100px 0 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // position: absolute;
+    // z-index: 5;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+  
+    @media (max-width: 991px) {
+      padding: 100px 0 0 0;
+    }
+  
+    @media (max-width: 767px) {
+     min-height: auto;
+    }
+  
+    &__img {
+      pointer-events: none;
+      width: auto;
+      height: auto;
+      // position: absolute;
+      // top: 200px;
+      // left: 50%;
+      // transform: translateX(-50%);
+  
+      @media (max-width: 530px) {
+        max-width: 80%;
+      }
+    }
+  
+    &__content {
+      @include proxima-semibold();
+      max-width: 920px;
+      font-size: 1.5rem;
+      margin: 70px auto 130px;
+  
+      @media (max-width: 991px) {
+        max-width: 768px;
+        font-size: 1.375rem;
+        margin: 70px auto 120px;
+      }
+  
+      @media (max-width: 720px) {
+        max-width: 550px;
+        font-size: 1.25rem;
+        margin: 70px auto 100px;
+      }
+  
+      @media (max-width: 530px) {
+        max-width: calc(100% - 60px);
+        font-size: 1rem;
+        margin: 50px auto 100px;
+      }
+  
+      // span {
+      //   @include cerapro-black();
+      // }
+    }
+  
+    &__mouse {
+      // background-color: #010511;
+    }
+  }
+  

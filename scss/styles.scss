@@ -1,0 +1,93 @@
+// Importing the external libraries
+@import './external/libraries';
+
+// Base
+@import './internal/base/fonts';
+@import './internal/base/varibles';
+@import './internal/base/mixins';
+@import './internal/base/base';
+
+// Components
+@import './internal/components/navigaion';
+@import './internal/components/hamburger';
+@import './internal/components/contact-form';
+@import './internal/components/banner';
+@import './internal/components/footer';
+@import './internal/components/title';
+@import './internal/components/work-label';
+@import './internal/components/buttons';
+@import './internal/components/arrow';
+@import './internal/components/services-works';
+@import './internal/components/other-services';
+@import './internal/components/testimonials';
+@import './internal/components/css-awards';
+@import './internal/components/popup';
+
+// Pages
+// Home
+// 1. Home Banner
+// 2. Logo Reveal section
+@import './internal/pages/home/banner';
+@import './internal/pages/home/logo_section';
+@import './internal/pages/home/services';
+@import './internal/pages/home/latest-work';
+@import './internal/pages/home/innovation';
+@import './internal/pages/home/blog';
+@import './internal/pages/home/careers-client';
+
+// 3. Home Our Works 8 Pages
+@import './internal/pages/home/ourworks';
+
+// About
+@import './internal/pages/about/endless';
+@import './internal/pages/about/qqci';
+@import './internal/pages/about/great';
+@import './internal/pages/about/crew';
+@import './internal/pages/about/workplace';
+
+// Brand Transformation
+@import './internal/pages/brand/banner';
+@import './internal/pages/brand/sics';
+@import './internal/pages/brand/mars';
+@import './internal/pages/brand/quote';
+
+// Experience Design Services
+@import './internal/pages/experience/process';
+
+// Application Development Services
+@import './internal/pages/app-dev/blend';
+@import './internal/pages/app-dev/industries';
+
+// Elearning Services
+@import './internal/pages/elearning/content';
+@import './internal/pages/elearning/process';
+@import './internal/pages/elearning/creative';
+@import './internal/pages/elearning/sections';
+
+// Industry
+@import './internal/pages/industry/industry';
+
+// Staffing
+@import './internal/pages/staffing/staffing';
+
+// IT Support
+@import './internal/pages/it/it';
+
+// Works
+@import './internal/pages/works/dropdown';
+
+// develop
+@import './internal/pages/develop/previlage';
+@import './internal/pages/develop/ux';
+@import './internal/pages/develop/insta';
+
+// Collab
+@import './internal/pages/collab/edu';
+@import './internal/pages/collab/startup';
+@import './internal/pages/collab/partner';
+
+// Case study
+
+@import './internal/pages/case-study/banner';
+@import './internal/pages/case-study/section';
+@import './internal/pages/case-study/footer';

@@ -1,0 +1,64 @@
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  // background-color: #010511;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  min-height: 768px;
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+
+    .container {
+      position: relative;
+    }
+  }
+}
+
+.scroll-indication {
+  position: fixed;
+  text-align: center;
+	bottom:10px;
+	left: 50% ;
+	animation: bounce 2s 3;
+	-webkit-animation: bounce 2s 3;
+	-moz-animation: bounce 2s 3;
+	-o-animation: bounce 2s 3;
+  transition: all 0.3s ease;
+  opacity: 0;
+  z-index:500;
+  transform: translate(-50%, 0);
+
+  &.active{
+    opacity: 1;
+  }
+  p{
+    display: none;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .scroll-indication{
+    display: none;
+  }
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translate(-50%, 0);}
+	40% {transform: translate(-50%, -30px);}
+	60% {transform: translate(-50%, -15px);}
+}

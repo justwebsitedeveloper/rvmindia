@@ -1,0 +1,79 @@
+.experience-process {
+  padding: 150px 0;
+  @media (max-width: 470px) {
+    padding: 100px 0 0 0;
+  }
+
+
+  &__intro {
+    text-align: center;
+
+    p {
+      max-width: 580px;
+      margin: 25px auto 0px auto;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__steps {
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    justify-content: space-between;
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 180px);
+      grid-auto-rows: 450px;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 180px);
+      grid-auto-rows: 450px;
+    }
+    @media (max-width: 400px) {
+      grid-template-columns: repeat(1, 180px);
+      grid-auto-rows: 450px;
+      margin-left: auto;
+      margin-right: auto;
+      display: table;
+    }
+  }
+
+  &__step {
+    @media (max-width: 400px) {
+      margin-bottom: 80px;
+    }
+    img {
+      height: 45px;
+      width: auto;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      // @include cerapro-medium();
+      @include proxima-semibold();
+      font-size: 1.25rem;
+      margin-bottom: 35px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      // @include cerapro-regular();
+      @include proxima-regular();
+      font-size: 0.9rem;
+
+      @media (max-width: 768px) {
+        font-size: 0.825rem;
+      }
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

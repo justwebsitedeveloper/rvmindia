@@ -1,0 +1,16 @@
+.banner__content--brand {
+  p {
+    max-width: 360px;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .rvm-work-label {
+    margin-bottom: 25px;
+  }
+  &__responsive p{
+    @media (max-width: 767px) {
+      display:none;
+    }
+  }
+}

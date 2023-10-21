@@ -1,0 +1,32 @@
+.develop-ig {
+  padding: 100px 0 120px 0;
+
+  @media (max-width: 991px) {
+    padding: 75px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+
+  background-color: #f6f6f6;
+
+  .section-title-container {
+    margin-bottom: 60px;
+  }
+
+  #developIg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    // @media (max-width: 767px) {
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
+  }
+}
+
+.developIg img{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}

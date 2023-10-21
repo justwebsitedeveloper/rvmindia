@@ -1,0 +1,72 @@
+.about-great {
+  padding: 150px 0;
+  width: 100%;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    padding: 100px 0;
+  }
+
+  &__content {
+    @media (max-width: 470px) {
+      padding-bottom: 40px;
+    }
+  }
+  &__cover {
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 2.25rem;
+  }
+
+  &__img-cover {
+    text-align: right;
+    position: relative;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  &__cloud {
+    position: absolute;
+
+    &--cloud1 {
+      left: 10px;
+      top: 35%;
+      max-width: 275px;
+
+      @media (max-width: 1199px) {
+        left: -70px;
+      }
+
+      @media (max-width: 991px) {
+        left: -145px;
+      }
+      
+    }
+
+    &--cloud2 {
+      top: 20%;
+      right: -100px;
+      max-width: 255px;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    &:first-of-type {
+      @include proxima-semibold();
+      font-size: 1.125rem;
+      margin-bottom: 1.875rem;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

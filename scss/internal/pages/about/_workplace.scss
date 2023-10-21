@@ -1,0 +1,98 @@
+.about-workplace {
+  padding-top: 300px;
+  background-image: url(./../img/about/rvm-element.svg);
+  background-position: center top 50px;
+  background-repeat: no-repeat;
+  @media (max-width: 470px) {
+    padding-top: 50px;
+  }
+
+  &__quote {
+    text-align: center;
+    margin-bottom: 200px;
+    @media (max-width: 470px) {
+      padding-bottom: 0px;
+    }
+  
+
+    &-text {
+      font-size: 2.25rem;
+      @include roboto-slab();
+      // @include cerapro-thin();
+      margin-bottom: 30px;
+
+      span {
+        display: block;
+        // @include cerapro-black();
+      }
+    }
+
+    em {
+      color: #2649db;
+      font-style: normal;
+      // @include cerapro-medium();
+      
+      @include proxima-semibold();
+
+      font-size: 1.125rem;
+    }
+  }
+
+  &__tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 120px;
+    @media (max-width: 470px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__tile {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+
+    &-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    &:nth-child(2n) {
+      top: 120px;
+      @media (max-width: 470px) {
+        top: 0px;
+      }
+    }
+  }
+}
+
+.about-brand-section {
+  padding: 150px 0 0 0;
+
+  @media (max-width: 991px) {
+    padding: 100px 0 0 0;
+  }
+
+  .brand-img {
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    img{
+      max-width:100%;
+      height:auto;
+      padding: 0;
+    }
+  }
+}

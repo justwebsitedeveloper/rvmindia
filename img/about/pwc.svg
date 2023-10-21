@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="206" height="102" viewBox="0 0 206 102">
+  <defs>
+    <clipPath id="clip-pwc">
+      <rect width="206" height="102"/>
+    </clipPath>
+  </defs>
+  <g id="pwc" clip-path="url(#clip-pwc)">
+    <rect width="206" height="102" fill="#fff"/>
+    <g id="pwc-2" data-name="pwc" transform="translate(55.136 18.931)">
+      <path id="path4061" d="M666.966,240.661h-30.7V232.8h30.7Z" transform="translate(-582.561 -213.153)" fill="#e669a2"/>
+      <path id="path4103" d="M662.978,112.7H636.265V93.051h26.713Z" transform="translate(-582.561 -85.197)" fill="#f3be26"/>
+      <path id="path4089" d="M651.941,27.508H636.264V0h15.677Z" transform="translate(-582.56)" fill="#ee9c34"/>
+      <path id="path4075" d="M655.026,60.8H636.265V36.366h18.761Z" transform="translate(-582.561 -33.297)" fill="#f3bc87"/>
+      <path id="path4688" d="M636.213,36.421V60.852h15.68V36.421Z" transform="translate(-582.513 -33.347)" fill="#e3721c"/>
+      <path id="path4119" d="M450.016,325.9h15.72v3.929h-15.72Z" transform="translate(-412.032 -298.395)" fill="#ad1b02"/>
+      <path id="path4698" d="M636.213,93v19.656h18.774V93Z" transform="translate(-582.513 -85.15)" fill="#e88d14"/>
+      <path id="path4693" d="M636.213,93v19.656h15.68V93Z" transform="translate(-582.513 -85.15)" fill="#d85604"/>
+      <path id="path4117" d="M646.069,197.939h-9.8v-11.8h9.8Z" transform="translate(-582.561 -170.431)" fill="#c14303"/>
+      <path id="path4713" d="M636.213,232.87v7.85H662.94v-7.85Z" transform="translate(-582.513 -213.215)" fill="#db4e18"/>
+      <path id="path4708" d="M636.213,232.87v7.85h18.774v-7.85Z" transform="translate(-582.513 -213.215)" fill="#d1390d"/>
+      <path id="path4703" d="M636.213,232.87v7.85h15.68v-7.85Z" transform="translate(-582.513 -213.215)" fill="#c22303"/>
+      <path id="path4625" d="M636.213,232.87v7.85h9.818v-7.85Z" transform="translate(-582.513 -213.215)" fill="#ad1b02"/>
+      <g id="g2925" transform="translate(0 40.525)">
+        <path id="path2850" d="M696.935,158.113c-2.675.476-4.1,2.5-4.1,6,0,3.566,1.9,5.944,4.7,5.944,1.367,0,2.556-.476,5.052-1.724v2.913a15,15,0,0,1-7.192,1.783c-2.675,0-4.577-.654-6.063-2.259a8.117,8.117,0,0,1-2.378-5.885c0-5.052,3.8-8.559,9.332-8.559,3.626,0,6.182,1.724,6.182,4.161a2.7,2.7,0,0,1-2.913,2.734,5.36,5.36,0,0,1-2.615-.832" transform="translate(-639.813 -156.33)"/>
+        <path id="path2852" d="M388.895,164.889c2.437-3.031,3.329-4.28,3.329-5.766a2.8,2.8,0,0,0-2.853-2.794,3.227,3.227,0,0,0-2.259,1.01v6.241l-3.982,5.35V156.805h-3.8l-6.3,10.4v-10.4h-2.14l-5.766,1.308V159.6l3.15.3v12.9h3.982l6.063-9.986v9.986h4.458" transform="translate(-345.147 -156.33)"/>
+        <path id="path2862" d="M136.4,172.063h.892c3.21,0,4.993-1.962,4.993-5.885,0-3.269-1.427-5.052-4.1-5.052a9.651,9.651,0,0,0-1.783.238v10.7Zm0,7.014,2.615.594v1.486H128.737v-1.486l2.378-.594V161.126H128.5V159.64l6.241-1.9H136.4v2.14c2.913-1.783,3.923-2.08,5.468-2.08,3.448,0,6.063,3.21,6.063,7.668,0,5.112-3.507,8.619-8.857,8.619-.594,0-1.6-.059-2.675-.119" transform="translate(-128.499 -157.619)"/>
+      </g>
+    </g>
+  </g>
+</svg>

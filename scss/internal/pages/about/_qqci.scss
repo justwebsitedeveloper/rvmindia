@@ -1,0 +1,118 @@
+.about-qqci {
+  padding: 150px 0 200px 0;
+  background-color: #2649db;
+  color: #fff;
+  @media (max-width: 470px) {
+    padding: 100px 0 100px 0;
+  }
+
+  .container {
+    position: relative;
+  }
+  &__element {
+    position: absolute;
+    right: 0;
+    top: -245px;
+      @media (max-width: 1200px) {
+        display: none;
+      }
+  }
+
+  &__title {
+    font-size: 3rem;
+    // @include cerapro-thin();
+    @include roboto-slab();
+    margin-bottom: 145px;
+
+    span {
+      // @include cerapro-regular();
+      display: block;
+    }
+
+    em {
+      // @include cerapro-black();
+      font-style: normal;
+      color: #ffc82c;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+      margin-bottom: 75px;
+    }
+
+    @media (max-width: 470px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 370px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 250px);
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 250px);
+    }
+    @media (max-width: 530px) {
+      grid-template-columns: repeat(1, 250px);
+    }
+  }
+
+  &__tile {
+    position: relative;
+    @media (max-width: 470px) {
+      padding-bottom:30px;
+    }
+    &-number {
+      font-size: 7rem;
+      @include cerapro-black();
+      line-height: 0.8;
+      z-index: 1;
+      color: #fff;
+      transition: all ease 0.5s;
+      @supports (-webkit-text-stroke: 1px #fff) {
+        -webkit-text-stroke: 1px #fff;
+        -webkit-text-fill-color: #2649db;
+      }
+    }
+
+    &:hover span {
+      color: #ffc82c;
+      transition: all ease 0.5s;
+      @supports (-webkit-text-stroke: 1px #ffc82c) {
+        -webkit-text-stroke: 1px #ffc82c;
+      }
+    }
+
+    h4 {
+      // @include cerapro-black();
+      @include roboto-slab();
+      font-size: 3rem;
+      margin-top: -30px;
+      margin-bottom: 1rem;
+      z-index: 1;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: #2649db;
+        width: 100%;
+        height: 80%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+    }
+
+    p {
+      max-width: 210px;
+      margin-bottom: 0;
+    }
+
+  }
+}

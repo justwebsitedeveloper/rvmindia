@@ -1,0 +1,177 @@
+.case-study-banner {
+  min-height: 100vh;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    align-items: flex-end;
+    min-height: calc(100vh - 80px);
+  }
+
+  &--cwi {
+    background-color: #53d7cf;
+  }
+  &--asmara {
+    background-color: #8dceff;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(100vh - 170px);
+    }
+  }
+  &--covid {
+    background-color: #b3e4e0;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(85vh);
+    }
+  }
+  &--flsmidth {
+    background-color: #ff97be;
+    @media (max-width: 767px) {
+      align-items: flex-end; 
+      min-height: calc(100vh - 150px);
+    }
+  }
+  &--drone {
+    background-color: #a8ffa1;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(100vh - 250px);
+    }
+  }
+  &--taxbreeze {
+    background-color: #ffe599;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(100vh - 250px);
+    }
+  }
+  &--tce {
+    background-color: #bcb3fb;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(75vh);
+    }
+  }
+  &--leama{
+    background-color: #f1bcfd;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(100vh - 250px);
+    }
+  }
+  &--crimesim{
+    background-color: #f4c0ff;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(100vh - 170px);
+    }
+  }
+  &--automation{
+    background-color: #cdffcd;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(100vh - 170px);
+    }
+  }
+  &--trojan{
+    background-color: #ff979a;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(100vh - 170px);
+    }
+  }
+  &--uniqpro{
+    background-color: #e3dad5;
+    @media (max-width: 767px) {
+      align-items: flex-end;
+      min-height: calc(100vh - 170px);
+    }
+  }
+  &__illustration {
+    max-width: 100%;
+    height: auto;
+    max-height: 60vh;
+    width: auto;
+
+    @media (max-width: 767px) {
+      max-height: 50vh;
+    }
+  }
+
+  &__back {
+    margin-bottom: 70px;
+    display: table;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__right {
+    text-align: center;
+    @media (max-width: 1440px) {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &--automation{
+      @media (max-width: 767px) {
+        margin-top: 100px;
+      }
+    }
+    &--crimesim{
+      @media (max-width: 767px) {
+        margin-top: 100px;
+      }
+    }
+    &--trojan{
+      @media (max-width: 767px) {
+        margin-top: 100px;
+        img {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+
+  &__title {
+    @include roboto-slab();
+    font-size: 2.75rem;
+    margin-bottom: 0;
+
+    @media (max-width: 1199px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 1.75rem;
+      margin: 80px 0 40px 0;
+      br {
+        display: none;
+      }
+    }
+
+    @media (max-width: 375px) {
+      font-size: 1.55rem;
+    }
+  }
+}
+

@@ -1,0 +1,50 @@
+.develop-Privilege {
+  margin: 150px 0;
+
+  @media (max-width: 991px) {
+    margin: 100px 0;
+  }
+
+  @media (max-width: 767px) {
+    margin: 75px 0;
+  }
+
+  &__container {
+    align-items: center;
+  }
+
+  img {
+    border-radius: 20px;
+
+    @media (max-width: 767px) {
+      margin-top: 25px;
+    }
+  }
+
+  &__content {
+    h2 {
+      margin-bottom: 35px;
+      @media (max-width: 991px) {
+        margin-bottom: 25px;
+      }
+    }
+
+    p {
+      @include proxima-regular();
+      font-size: 1rem;
+      max-width: 330px;
+      margin-bottom: 30px;
+      @media (max-width: 991px) {
+        margin-bottom: 25px;
+      }
+
+      @media (max-width: 767px) {
+        margin-top: 10px;
+      }
+
+      @media (max-width: 991px) {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

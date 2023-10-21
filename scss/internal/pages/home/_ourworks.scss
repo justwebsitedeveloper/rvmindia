@@ -1,0 +1,24 @@
+.works-intro {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &__content {
+    align-items: flex-end;
+  }
+
+  .works-para .para:first-child {
+    padding-top: 30px;
+    @include cerapro-bold();
+  }
+
+  .right-para {
+    @include cerapro-bold();
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}

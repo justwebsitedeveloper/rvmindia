@@ -1,0 +1,212 @@
+// careers
+
+.home-career {
+  padding: 250px 0;
+  width: 100%;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    padding: 150px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 100px 0;
+  }
+  &--digital {
+    @media (max-width: 767px) {
+      padding: 100px 0 0 0;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__inner {
+    position: relative;
+
+    button{
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 55px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: -155px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    height: auto;
+
+    @media (max-width: 992px) {
+      position: relative;
+      right: auto;
+      top: 0;
+      transform: none;
+      margin-bottom: 30px;
+      left: -20px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 80%;
+      left: -6.75
+    }
+  }
+}
+
+// Work together
+.home-together {
+  background-color: #2649db;
+  padding: 150px 0;
+  color: #fff;
+
+  @media (max-width: 767px) {
+    padding: 100px 0;
+  }
+
+  &__inner {
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &__elements {
+    position: absolute;
+    left: -150px;
+    top: -210px;
+    // -webkit-filter: drop-shadow(9px 0px 120px rgba(0, 0, 0, 0.35));
+    // filter: drop-shadow(9px 0px 120px rgba(0, 0, 0, 0.35));
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__lead {
+    max-width: 30em;
+    // @include cerapro-medium();
+    @include proxima-semibold();
+    font-size: 1.125rem;
+    margin-bottom: 80px;
+
+    @media (max-width: 768px) {
+      max-width: 25em;
+      font-size: 1rem;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__tiles {
+    display: grid;
+    grid-row-gap: 75px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 75px;
+  }
+
+  &__tile {           
+    p {
+      font-size: 3rem;
+      // @include cerapro-black();
+      @include roboto-slab();
+      color: #ffd941;
+      margin: 0;
+      line-height: 1;
+
+      @media (max-width: 1200px) {
+        font-size: 2.75rem;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.75rem;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 1.55rem;
+      }
+
+      span {
+        font-size: 2rem;
+        display: block;
+        // @include cerapro-medium();
+        @include proxima-semibold();
+        color: #fff;
+
+        @media (max-width: 1200px) {
+          font-size: 1.75rem;
+        }
+
+        @media (max-width: 992px) {
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 1.25rem;
+        }
+
+        @media (max-width: 375px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// Clients Sliding logo
+
+.home-clients {
+  padding: 70px 0 70px 0;
+  background-color: white;
+}
+.sliding {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+$animationSpeed: 30s;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-206px * 17));
+  }
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(206px * 34);
+  }
+
+  .slide {
+    height: 100px;
+    width: 206px;
+  }
+}

@@ -1,0 +1,106 @@
+.case-study-footer {
+  padding: 45px 0;
+  min-height: 550px;
+  background-color: #8dceff;
+  display: flex;
+  align-items: center;
+  &--asmara {
+    background-color: #b3e4e0;
+  }
+  &--covid {
+    background-color: #ff97be;
+  }
+  &--flsmidth {
+    background-color: #a8ffa1;
+  }
+  &--covid {
+    background-color: #ff97be;
+  }
+  &--drone {
+    background-color: #ffe599;
+  }
+  &--taxbreeze {
+    background-color: #bbb2f9;
+  }
+  &--leama {
+    background-color: #51d3c9;
+  }
+  &--tce {
+    background-color: #f3bdff;
+  }
+  &--automation{
+    background-color: #ff97be;
+  }
+  &--trojan{
+    background-color: #ff979a;
+  }
+  &--uniqpro{
+    background-color: #e3dad5;
+  }
+  &--crimesim{
+    background-color: #cdffcd;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      & > a {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+  }
+  &__left {
+    max-width: 480px;
+  }
+
+  &__title {
+    display: block;
+    @include roboto-slab();
+    font-size: 2.75rem;
+    margin-bottom: 70px;
+
+    @media (max-width: 1199px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 1.75rem;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 1.55rem;
+    }
+  }
+
+  &__img {
+    max-width: 350px;
+    height: auto;
+    &--left {
+      @media (max-width: 510px) {
+        margin-right: auto;
+      }
+    }
+    &--responsive {
+      @media (max-width: 767px) {
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+      padding-top: 50px;
+    }
+  }
+}

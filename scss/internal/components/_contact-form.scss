@@ -1,0 +1,106 @@
+.modal-backdrop {
+  background-color: transparent;
+  transition: all ease .5s;
+}
+
+.modal-content {
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 9px 0 51px rgba(186, 186, 186, 0.32);
+  overflow: hidden;
+}
+
+.contact-form {
+  &__left {
+    padding-left: 50px;
+    padding-right: 10px;
+    background-color: #ffc82c;
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__right {
+    padding: 100px 50px;
+    position: relative;
+  }
+
+  &__form {
+    margin-top: 60px;
+
+    label {
+      @include proxima-semibold();
+      font-size: 1rem;
+    }
+
+    .form-row {
+      margin-bottom: 30px;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+      font-size: 0.925rem;
+    }
+
+    input {
+      font-size: 0.925rem;
+    }
+
+    .form-control {
+      &.error {
+        border-color: red;
+      }
+
+      &:focus {
+        border-color: #2548db;
+        box-shadow: none;
+      }
+    }
+
+    label.error {
+      @include proxima-regular();
+      position: absolute;
+      font-size: 12px;
+      color: red;
+      left: 5px;
+      bottom: -27px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: transparent;
+    border: 0;
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      width: 20px;
+    }
+  }
+
+  &__submit {
+    background-color: transparent;
+    float:right;
+    border: 0;
+    margin-top: 30px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &__modal {
+    z-index: 10500;
+  }
+}

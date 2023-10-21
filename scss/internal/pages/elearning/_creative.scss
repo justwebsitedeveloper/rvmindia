@@ -1,0 +1,94 @@
+.elearning-creative {
+  &__inner {
+    background-color: #2649db;
+    border-radius: 20px;
+    padding: 90px 50px;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
+    @media (max-width: 370px) {
+      padding: 90px 8px;
+    }
+  }
+
+  &__left {
+    img {
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      @media (max-width: 1200px) {
+        top: -254px;
+        left: -265px;
+      }
+    }
+
+    &-content {
+      max-width: 320px;
+      @media (max-width: 1200px) {
+        padding-bottom: 60px;
+      }
+
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: repeat(2, 283px);
+    grid-row-gap: 25px;
+    grid-column-gap: 60px;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 283px);
+    }
+  }
+
+  &__tile {
+    &-number {
+      font-size: 2.5rem;
+      @include cerapro-black();
+      line-height: 0.8;
+      z-index: 1;
+      color: #fff;
+      transition: all ease 0.5s;
+      @supports (-webkit-text-stroke: 1px #ffc82c) {
+        -webkit-text-stroke: 1px #ffc82c;
+        -webkit-text-fill-color: #2649db;
+      }
+    }
+
+    &-title {
+      @include cerapro-medium();
+      margin-top: -14px;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      z-index: 1;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        background-color: #2649db;
+        width: 100%;
+        height: 80%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: -1;
+      }
+    }
+
+    &-content {
+      margin-bottom: 0;
+    }
+  }
+}

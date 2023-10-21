@@ -1,0 +1,23 @@
+body {
+  // @include cerapro-regular();
+  @include proxima-regular();
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  @include proxima-regular();
+  font-size: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+  }
+}

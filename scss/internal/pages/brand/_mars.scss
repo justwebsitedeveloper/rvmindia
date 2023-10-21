@@ -1,0 +1,44 @@
+.brand-mars {
+  margin-bottom: 125px;
+
+  &__inner {
+    color: #fff;
+    background-color: #2649db;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+
+    &-left {
+      padding: 100px 60px;
+      max-width: 465px;
+
+      p {
+        margin-bottom: 0;
+        margin-top: 25px;
+
+        span {
+          @include proxima-semibold();
+          font-size: 1.5rem;
+          @media (max-width: 767px) {
+            font-size: 1.3rem;
+          }
+          @media (max-width: 420px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__support-img {
+    flex-grow: 1;
+    background: url('./../img/brand/mars-value-image.jpg');
+    background: -webkit-image-set(
+      url('./../img/brand/mars-value-image.jpg') 1x,
+      url('./../img/brand/mars-value-image@2x.jpg') 2x,
+      url('./../img/brand/mars-value-image@3x.jpg') 3x
+    );
+    background-position: center;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,31 @@
+.app-dev-blending {
+  padding: 150px 0;
+  @media (max-width: 767px) {
+    padding: 100px 0;
+   }
+
+  &__intro {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 35px;
+    }
+
+    p {
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__img-cover {
+    margin-top: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}

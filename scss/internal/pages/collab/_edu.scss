@@ -1,0 +1,122 @@
+.collab-edu {
+  padding: 150px 0;
+
+  @media (max-width: 767px) {
+    padding: 100px 0;
+  }
+
+  &__content {
+    text-align: center;
+    max-width: 560px;
+    margin: auto;
+    margin-bottom: 75px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+
+      @media (max-width: 767px) {
+        margin-bottom: 25px;
+      }
+    }
+
+    p {
+      @include proxima-regular();
+      font-size: 1rem;
+
+      &:first-of-type {
+        @include proxima-semibold();
+      }
+    }
+  }
+
+  &__tiles {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 450px;
+    grid-gap: 15px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 450px 450px;
+      justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 250px);
+      grid-template-rows: 450px 450px 450px;
+    }
+
+    @media (max-width: 549px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 350px 350px 350px;
+    }
+
+    @media (max-width: 415px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 350px 350px 350px 350px 350px;
+    }
+  }
+
+  &__tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(39, 39, 39, 0.7);
+    }
+
+    &-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+      height: auto;
+      width: auto;
+      z-index: 2;
+    }
+
+    &-content {
+      position: absolute;
+      top: 330px;
+      z-index: 5;
+      color: #fff;
+      left: 15px;
+      right: 15px;
+
+      @media (max-width: 549px) {
+        top: 260px;
+      }
+
+      @media (max-width: 415px) {
+        top: auto;
+        bottom: 25px;
+      }
+
+      .rvm-work-label {
+        margin-bottom: 15px;
+      }
+
+      p {
+        @include proxima-semibold();
+        font-size: 1rem;
+        margin-bottom: 0;
+        @media (max-width: 1199px) {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}

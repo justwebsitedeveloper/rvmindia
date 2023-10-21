@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Cera pro';
+  src: url('./../fonts/cera_pro_regular-webfont.woff2') format('woff2'),
+    url('./../fonts/cera_pro_regular-webfont.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Cera pro';
+  src: url('./../fonts/cera_pro_thin-webfont.woff2') format('woff2'),
+    url('./../fonts/cera_pro_thin-webfont.woff') format('woff');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Cera pro';
+  src: url('./../fonts/cera_pro_medium-webfont.woff2') format('woff2'),
+    url('./../fonts/cera_pro_medium-webfont.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Cera pro';
+  src: url('./../fonts/cera_pro_bold-webfont.woff2') format('woff2'),
+    url('./../fonts/cera_pro_bold-webfont.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Cera pro';
+  src: url('./../fonts/cera_pro_black-webfont.woff2') format('woff2'),
+    url('./../fonts/cera_pro_black-webfont.woff') format('woff');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+    url('./../fonts/proximanova-regular-webfont.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./../fonts/proxima_nova_semibold-webfont.woff2') format('woff2'),
+    url('./../fonts/proxima_nova_semibold-webfont.woff') format('woff');
+  font-weight: 600;
+}
+
+
+//   Font-mixins
+
+@mixin cerapro-regular {
+  font-family: 'Cera pro', sans-serif; 
+  font-weight: 400;
+}
+
+@mixin cerapro-thin {
+  font-family: 'Cera pro', sans-serif; 
+  font-weight: 200;
+}
+
+@mixin cerapro-medium {
+  font-family: 'Cera pro', sans-serif; 
+  font-weight: 500;
+}
+
+@mixin cerapro-bold {
+  font-family: 'Cera pro', sans-serif;
+  font-weight: 700;
+}
+
+@mixin cerapro-black {
+  font-family: 'Cera pro', sans-serif;
+  font-weight: 800;
+}
+
+@mixin proxima-regular {
+  font-family: 'Proxima Nova', sans-serif;     
+  font-weight: 400;
+}
+
+@mixin proxima-semibold {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+}
+
+@mixin roboto-slab {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+@mixin roboto-slab-regular {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}

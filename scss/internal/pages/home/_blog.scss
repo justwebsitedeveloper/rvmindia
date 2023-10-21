@@ -1,0 +1,136 @@
+.home-blog {
+  background-color: #ffc82c;
+  padding: 150px 0;
+
+  @media (max-width: 767px) {
+    padding: 100px 0;
+  }
+
+  &__carousel {
+    align-items: stretch;
+    position: relative;
+  }
+
+  &__img-cover {
+    cursor: pointer;
+    width: 100%;
+    padding-top: 74.074%;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 15px;
+      background-color: #2548db;
+      z-index: 2;
+
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    max-width: 400px;
+    min-height: 400px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    @media (max-width: 1199px) {
+      min-height: 337px;
+    }
+
+    &-indi {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate3d(0, -50%, 0);
+    }
+
+    h5 {
+      // @include cerapro-medium();
+      @include proxima-semibold();
+      font-size: 2.5rem;
+      line-height: 1;
+      margin-bottom: 45px;
+
+      @media (max-width: 1199px) {
+        font-size: 2.25rem;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 991px) {
+        font-size: 1.75rem;
+      }
+    }
+
+    p {
+      @include proxima-regular();
+
+      &:first-of-type {
+        @include proxima-semibold();
+        font-size: 1.1rem;
+
+        @media (max-width: 1199px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &__more {
+    margin-top: 30px;
+    display: inline-block;
+
+    @media (max-width: 1199px) {
+      margin-top: 15px;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+    li {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 100vh;
+      margin-left: 5px;
+      transition: width .5s ease;
+
+      @media (max-width: 470px) {
+      width: 13px;
+      height: 13px;
+      margin-left: 10px;
+      }
+
+      &.active {
+        background-color: #2548db;
+        width: 25px;
+      }
+    }
+  }
+}

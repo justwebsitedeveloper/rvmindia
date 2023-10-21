@@ -1,0 +1,55 @@
+.about-endless {
+  padding: 150px 0 250px 0;
+  width: 100%;
+  overflow: hidden;
+
+
+  @media (max-width: 767px) {
+    padding: 100px 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__inner {
+    position: relative;
+
+    p {
+      margin-top: 40px;
+      max-width: 350px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: -155px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 60%;
+    height: auto;
+
+    @media (max-width: 1200px) {
+      right: -125px;
+    }
+
+    @media (max-width: 992px) {
+      position: relative;
+      right: auto;
+      top: 0;
+      transform: none;
+      margin-top: 30px;
+      left: -58px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 80%;
+      left: -6.75%;
+    }
+
+    @media (max-width: 500px) {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.elearning__content {
+  max-width: 380px;
+
+  &--gamification {
+    max-width: 350px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    &:first-of-type {
+      @include proxima-semibold();
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/internal/pages/staffing/staffing.scss"
+    ],
+    "names": [],
+    "file": "staffing.css"
+}

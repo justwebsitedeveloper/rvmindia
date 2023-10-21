@@ -1,0 +1,44 @@
+.brand-sics {
+  padding: 150px 0;
+  width:100%;
+  @media (max-width: 470px) {
+    padding: 100px 0;
+  }
+
+  &__lead {
+    max-width: 390px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  &__tiles {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 250px);
+      justify-content: space-around;
+      grid-gap:20px
+    }
+    @media (max-width: 580px) {
+      grid-template-columns: repeat(2, 200px); 
+      grid-auto-rows: auto;
+    }
+    @media (max-width: 430px) {
+      grid-template-columns: repeat(2, 138px); 
+      grid-auto-rows: auto;
+    }
+  }
+
+  &__tile {
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+      max-width: 100%;
+      height:auto;
+    }
+  }
+}

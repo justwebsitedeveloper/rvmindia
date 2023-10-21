@@ -1,0 +1,105 @@
+.window-popup {
+  background-image: linear-gradient(
+    rgb(10, 228, 206) 0%,
+    rgb(0, 200, 180) 100%
+  );
+  opacity: 1;
+  transform: translate(0px, 0px);
+  padding: 80px;
+  @media screen and (max-width: 840px) {
+    padding: 50px 20px 50px 20px;
+  }
+
+  &_content h3 {
+    @include roboto-slab();
+    padding-top: 60px;
+    font-size: 24px;
+    span {
+      color: #2649db;
+      @media screen and (max-width: 840px) {
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 840px) {
+      font-size: 18px;
+    }
+  }
+  &_content h4 {
+    color: white;
+  }
+  &_white {
+    margin-top: 200px;
+    @media screen and (max-width: 1320px) {
+      margin-top: 70px;
+      padding-bottom: 40px;
+    }
+    h4 {
+      @include roboto-slab();
+      font-size: 21px;
+      @media screen and (max-width: 840px) {
+        font-size: 16px;
+      }
+    }
+    span {
+      font-size: 24px;
+      @include roboto-slab();
+      @media screen and (max-width: 840px) {
+        font-size: 20px;
+      }
+    }
+    h4:first-of-type {
+      font-size: 30px;
+      padding-bottom: 20px;
+      @include roboto-slab();
+      @media screen and (max-width: 840px) {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.window-popup_image {
+  margin-left: auto;
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(2, 211px);
+  @media (max-width: 1320px) {
+    grid-template-columns: repeat(2, 170px);
+    margin: auto;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 211px);
+    margin: auto;
+    grid-gap: 10px;
+  }
+  img {
+    border: 12px solid #3adccc;
+    box-shadow: 0px 10px 29px rgba(0, 135, 126, 0.35);
+  }
+}
+
+@media (max-width: 1091px) {
+  .modal-xl {
+    max-width: 830px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .modal-xl {
+    max-width: 730px !important;
+  }
+}
+@media (max-width: 900px) {
+  .modal-xl {
+    max-width: 630px !important;
+  }
+}
+@media (max-width: 760px) {
+  .modal-xl {
+    max-width: 530px !important;
+  }
+}
+@media (max-width: 650px) {
+  .modal-xl {
+    max-width: 530px !important;
+  }
+}

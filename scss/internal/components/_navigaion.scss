@@ -1,0 +1,90 @@
+.header {
+  padding-top: 50px;
+  @media (max-width: 768px) {
+    padding-top: 30px;
+  }
+}
+.home-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  // top: 80px;
+  top: 50px;
+  z-index: 50;
+
+  @media (max-width: 767px) {
+    top: 25px;
+  }
+}
+.navbar-brand img {
+  @media (max-width: 390px) {
+    max-width: 200px;
+  }
+}
+
+.navbar{
+  @media (min-width: 1920px) {
+    padding: 0;
+  }
+}
+
+.nav {
+  &__hamburger {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    padding:0;
+    &:focus {
+      outline: 0;
+    }
+
+  }
+}
+
+.navbar-hamburger {
+  color: #fff;
+  // @include cerapro-medium();
+  @include proxima-semibold();
+  text-transform: uppercase;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-right: 15px;
+  }
+
+  svg {
+    fill: #fff;
+  }
+
+  &--black {
+    color: #000;
+
+    svg {
+      fill: #000;
+    }
+  }
+}
+
+
+// Nav sticky
+
+.nav-sticky {
+  position: fixed;
+  top: -120%;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 5;
+  padding: 10px 0;
+  transition: all ease 1s;
+
+  &.sticky {
+    top: 0;
+    opacity: 1;
+    transition: all ease .5s;
+    box-shadow: -1px -4px 6px 0px black;
+  }
+}
